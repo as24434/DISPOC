@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    *{
+        border: 20px;
+       // background-color: rgb(207, 102, 53);
+        font-family: sans-serif;
+        font-size: 1rem;
+        list-style: none;
+        ::-webkit-textfield-decoration-container: none;
+    }
+
+    .topmenu{
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        transform: -50%,-50%;
+    }
+    .menu{
+        width: 300px;
+        overflow: hidden;
+        border-radius: 8px;
+       
+    }
+    .item{
+        border: 1px solid #e74c3c;
+        overflow: hidden;
+    }
+
+    .btn{
+        color: white;
+        position: relative;
+        padding: 32px 20px;
+        display: block;
+        background-color: #f39c12;
+    }
+    .btn::before{
+        content: "";
+        position: absolute;
+        width: 40px;
+        height:32px;
+        background-color: #f39c12;
+        background: #f39c12;
+        transform: rotate(45deg);
+        left: 10px;
+        bottom: -10px;
+
+    }
+    .btn i{
+        margin-right: 12px;
+    }
+
+    .submenu{
+        background-color: #2d3436;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s;
+
+    }
+    .submenu a{
+        display: block;
+        padding: 16px 20px;
+        color: white;
+        position: relative;
+        margin: 3px 0;
+        font-size: 17px;
+    }
+
+    .submenu a::before{
+        display: block;
+        width :6px;
+        height: 100%;
+        background-color: #f39c12;
+        content: "";
+        left : 0px;
+        top : 0px;
+        position: absolute;
+        opacity: 0;
+        transition: 0.3s;
+       
+
+    }
+    .submenu a:hover::before{
+        opacity: 1;
+    }
+
+    .item:target .submenu{
+        max-height: 10em;
+    }
+    
+    
+
+
+
+
+
+    </style>
+    
+</head>
+<body>
+
+<div class="topmenu">
+
+
+   <div class="menu">
+        <li class="item"  id="Profile">
+            <a href="#Profile" class="btn"><i class="fa fas fa-user"></i>Profile</a>
+            <div class="submenu">
+                <a href="">Post</a>
+                <a href="">contract</a>
+                <a href="">Update</a>
+            </div>
+        </li>
+        <li class="item" id="Messages">
+            <a href="#Messages" class="btn"><i class="fa fas fa-envelope"></i>Messages</a>
+            <div class="submenu">
+                <a href="">Unread message</a>
+                <a href="">Inbox</a>
+                <a href="">Sent</a>
+            </div>
+        </li>
+        <li class="item" id="Setting">
+            <a href="#Setting" class="btn"><i class="fa fas fa-cog"></i>Setting</a>
+            <div class="submenu">
+                <a href="">Password</a>
+                <a href="">Language</a>
+                <a href="">Other</a>
+            </div>
+        </li>
+        <li class="item" id="Transfer">
+                <a href="#Transfer" class="btn"><i class="fa fas fa-comments-dollar"></i>Transfer</a>
+                <div class="submenu">
+                    <a href="">Funds Transfer</a>
+                    <a href="">Schedule Transfer</a>
+                    <a href="">Transfer History</a>
+                    <a href="">External Transfer</a>
+                </div>
+            </li>
+
+     <li class="item"><a href="#" class="btn"><i class="fa fas fa-sign-out-alt"></i>Logout</a></li>
+
+   </div>
+
+
+
+
+
+
+
+
+</div>
+
+    
+</body>
+</html>

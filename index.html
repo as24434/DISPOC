@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-size: cover;
+            background-position: center;
+
+            font-family: sans-serif;
+            background-color: #0A3D62;
+        }
+
+        .menu-bar {
+            background-color: #192A56;
+            color: white;
+            text-align: center;
+
+        }
+
+        .menu-bar ul {
+            text-align: center;
+            display: inline-flex;
+            list-style: none;
+        }
+
+        .menu-bar ul li {
+            width: 150px;
+            margin: 5px;
+            padding: 19px;
+        }
+
+        .menu-bar ul li a {
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .active,
+        .menu-bar ul li:hover,
+        .menu-bar ul li:hover .submenu-1 ul li:hover {
+            background-color: #6A89CC;
+            border-radius: 3px;
+
+
+        }
+
+        .menu-bar .fa {
+            margin: 4px;
+        }
+
+        .submenu-1 {
+            display: none;
+
+        }
+
+        submenu-2 {
+            display: none;
+
+        }
+
+        .menu-bar ul li:hover .submenu-1,
+        .menu-bar ul li:hover .submenu-2 {
+            display: block;
+            position: absolute;
+            background-color: #192A56;
+            ;
+            margin-top: 15px;
+            margin-left: -15px;
+
+        }
+
+        .menu-bar ul li:hover .submenu-1 ul {
+            margin: 10px;
+            display: block;
+        }
+
+        .menu-bar ul li:hover .submenu-1 ul li {
+            text-align: left;
+            width: 150px;
+            border-bottom: 1px dotted #fff;
+            background: transparent;
+            border-radius: 0;
+            padding: 19px;
+            color: #fff;
+        }
+
+        .menu-bar ul li:hover .submenu-1 ul li:last-child {
+            border-bottom: none;
+        }
+
+        .menu-bar ul li:hover .submenu-1 ul li a:hover {
+            color: black;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="menu-bar">
+            <Ul>
+                <li><a href="" id="Home"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                    
+
+                </li>
+                <li><a href="" id="Transfer"><i class="fa fa-usd" aria-hidden="true"></i>Transfer</a>
+                    <div class="submenu-1">
+                        <ul>
+                            <li>
+                                <a href="" id="">Mission</a>
+                            </li>
+                            <li>
+                                <a href="" id="">Version</a>
+                            </li>
+                            <li>
+                                <a href="" id="">Team</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li><a href="" id="Setting"><i class="fa fa-cog" aria-hidden="true"></i>Setting</a>
+                    <div class="submenu-1">
+                            <ul>
+                                <li>
+                                    <a href="" id="">Mission</a>
+                                </li>
+                                <li>
+                                    <a href="" id="">Version</a>
+                                </li>
+                                <li>
+                                    <a href="" id="">Team</a>
+                                </li>
+                            </ul>
+    
+                        </div>
+                    </li>
+                <li><a href="" id="Profile"><i class="fa fa-user" aria-hidden="true"></i>Profile</a>
+                    <div class="submenu-1">
+                            <ul>
+                                <li>
+                                    <a href="" id="">Mission</a>
+                                </li>
+                                <li>
+                                    <a href="" id="">Version</a>
+                                </li>
+                                <li>
+                                    <a href="" id="">Team</a>
+                                </li>
+                            </ul>
+    
+                        </div>
+                    </li>
+                <li><a href="" id="Message"><i class="fa fa-envelope-o" aria-hidden="true"></i>Message</a>
+                    <div class="submenu-1">
+                            <ul>
+                                <li>
+                                    <a href="" id="">Mission</a>
+                                </li>
+                                <li>
+                                    <a href="" id="">Version</a>
+                                </li>
+                                <li>
+                                    <a href="" id="">Team</a>
+                                </li>
+                            </ul>
+    
+                        </div>
+                    </li>
+                <li><a href="" id="Accounts"><i class="fa fa-list" aria-hidden="true"></i>Accounts</a>
+                    <div class="submenu-1">
+                            <ul>
+                                <li>
+                                    <a href="" id="">Mission</a>
+                                </li>
+                                <li>
+                                    <a href="" id="">Version</a>
+                                </li>
+                                <li>
+                                    <a href="" id="">Team</a>
+                                </li>
+                            </ul>
+    
+                        </div>
+                    </li>
+                <li><a href="" id="Logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+            </Ul>
+        </div>
+
+
+
+
+    </header>
+    <aside></aside>
+    <content></content>
+    <aside></aside>
+    <footer></footer>
+
+
+</body>
+
+</html>
